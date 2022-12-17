@@ -1,12 +1,27 @@
+:root {
+  --main-text-color: #2E2F42;
+  --second-text-color: #434455;
+  --hover-link-color: #404BBF;
+  --logo-brand-color: #4D5AE5;
+  --white-text-color: #FFFFFF;
+  --footer-logo-color: #F4F4FD;
+  --footer-text-color: #E7E9FC;
+
+  --main-background-color: #FFFFFF;
+  --second-background-color: #F4F4FD;
+  --btn-background-color: #4D5AE5;
+  --hover-background-color:#404BBF;
+  --dark-background-color: #2E2F42;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14;
     font-weight: 500;
-    color: #2E2F42;
-    background-color: #FFFFFF;
-   
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
 }
 
 .visually-hidden {
@@ -32,11 +47,8 @@ body {
     color: inherit;
  }
 
-.link:hover {
-color: #434455;
-}
-.link:focus {
-  color: #4D5AE5;
+.link:hover, .link:focus {
+color: var(--hover-link-color);
 }
 
 .btn {
@@ -61,7 +73,7 @@ color: inherit;
 }
 
 .logo-part {
-color:#4D5AE5;
+color: var(--logo-brand-color);
 }
 
 .navigation-list {}
@@ -86,16 +98,16 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--second-text-color);
 }
 
 .contacts-link:hover, .contacts-link:focus{
-  color: #4D5AE5;
+  color: var(--logo-brand-color);
 }
 /* -----------HERO----------- */
 
 .hero {
-background-color: #2E2F42;   
+background-color: var(--dark-background-color);   
 }
 
 .hero-title {
@@ -104,7 +116,7 @@ font-size: 56px;
 line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
-color: #FFFFFF;
+color: var(--white-text-color);
 }
 
 .hero-btn {
@@ -117,21 +129,17 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
-color: #FFFFFF;
-background-color: #4D5AE5;
+color: var(--white-text-color);
+background-color: var(--btn-background-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
 
 
-.hero-btn:hover {
-background-color: #4D5AE5;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.hero-btn:focus {
-background-color: #404BBF;
+.hero-btn:hover, .hero-btn:focus {
+background-color: var(--hover-background-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 
 /* -----------PREFERENCES----------- */
@@ -153,7 +161,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--second-text-color);
 }
 
 /* -----------WORK----------- */
@@ -177,7 +185,7 @@ text-transform: capitalize;
 /* -----------TEAM----------- */
 
 .team {
-background-color: #F4F4FD;
+background-color: var(--second-background-color);
 }
 
 .team-title {
@@ -192,7 +200,7 @@ text-transform: capitalize;
 .team-list {}
 
 .team-item {
-background-color: #FFFFFF;
+background-color: var(--main-background-color);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 width: 264px;
@@ -212,13 +220,13 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--second-text-color);
 }
 
 /* -----------FOOTER----------- */
 
 .footer {
-background-color: #2E2F42;
+background-color: var(--dark-background-color);
 }
 
 .footer-logo {
@@ -230,7 +238,7 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #F4F4FD;
+color: var(--footer-logo-color);
 }
 
 .footer-offer {
@@ -238,7 +246,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color: var(--footer-text-color);
 }
 
 /* -----------PORTFOLIO----------- */
@@ -261,15 +269,15 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
-color: #4D5AE5;
-background-color: #F4F4FD;
-border: 1px solid #E7E9FC;
+color: var(--logo-brand-color);
+background-color: var(--second-background-color);
+border: 1px solid var(--footer-text-color);
 border-radius: 4px;
 }
 
 .filter-btn:hover, .filter-btn:focus {
-color: #FFFFFF;
-background-color: #404BBF;
+color: var(--white-text-color);
+background-color: var(--hover-background-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 }
@@ -277,7 +285,7 @@ border-radius: 4px;
 .portfolio-list {}
 
 .portfolio-item {
-background-color: #FFFFFF; 
+background-color: var(--main-background-color); 
 }
 .portfolio-link {}
 
@@ -295,7 +303,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--second-text-color);
 }
 
 
